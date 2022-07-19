@@ -1,13 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 body {
   margin: 0;
+  width:'100%';
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #010a00;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.neon {
+  color: #fff;
+ 
+    
+  
+
+  
+}
+.errors{
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 25px;
+	color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #010a00;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /*display: flex;*/
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.money{
+  color: 'white';
+  background-color:'white';
+}
+
+.begin1{
+  position: fixed;
+  left: -50%;
+  right:-50%;
+  top: 0;
+  bottom: 0;
+  animation: begin1 5s ease-in-out infinite alternate;
+  background:linear-gradient(90deg,#a93563 50%, #2d276b -50%);
+  opacity: .5;
+  z-index: -1;
+}
+.begin2{
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+
+}
+.begin3{
+  animation-duration: 5s;
+}
+.wellcum{
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.wellcum h1{
+  font-family: 'Stylish', sans-serif;
+  font-size: 55px;
+  letter-spacing: 5px;
+  color:#fff;
+  margin:0;
+  animation: h1ani 9s 1;
+  opacity: 100%;
+}
+.wellcum h3{
+  font-size: 30px;
+  margin:0;
+  font-family: 'Delius Swash Caps', cursive;
+  color: #fff;
+  animation: h1ani 8s 1;
+  opacity: 100%;
+}
+.wellcum button{
+  font-size: 30px;
+  background-color: rgb(255,255,255,0);
+  border: 0;
+  font-family: 'Delius Swash Caps', cursive;
+  color: #fff;
+  animation: h2ani 10s 1;
+  opacity: 20%;
+}
+.wellcum button:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+@keyframes begin1{
+  0%{
+    transform: translateX(-50%);
+  }
+   100%{
+    transform: translateX(50%);
+  }
+}
+@keyframes h1ani{
+  0% {
+    opacity: 0%;
+
+  }
+  10%{
+    opacity: 20%;
+  }
+  90%{
+    opacity: 80%
+  }
+  100%{
+    opacity: 100%;
+     overflow: hidden;
+  }
+}
+@keyframes h2ani{
+  0% {
+    opacity: 0%;
+
+  }
+  10%{
+    opacity: 100%;
+  }
+  90%{
+    opacity: 100%
+  }
+  100%{
+    opacity: 30%;
+     overflow: hidden;
+  }
+}
+
+.input-form{
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 90%;
+  opacity: 100%;
+  transform: translate(-50%,-50%);
+  animation: formanime 7s 
+}
+@keyframes formanime{
+  from{
+    opacity: 0%;
+    width: 60%
+  }
+  to{
+    opacity: 100%;
+    width: 90%
+  }
+}
+.elonmuskwords{
+  color: white;
+  font-size: 15px;
+  font-family: 'Stylish', sans-serif; 
+}
+
+.elonmusktransfer{
+  font-size: 25px;
+  font-family: 'Delius Swash Caps', cursive;
+  color: white;
+  opacity: 100%;
+  animation: transfer 1.5s 17
+}
+.elonmusktransfer2{
+  font-size: 30px;
+  font-family: 'Delius Swash Caps', cursive;
+  color: rgb(240, 14, 213);
+  opacity: 0%;
+  animation: welcometext 3s
+}
+
+@keyframes welcometext{
+  0%{
+    opacity: 0%
+  }
+  20%{
+    opacity: 100%
+  }
+  80%{
+    opacity: 100%
+  }
+  100%{
+    opacity: 0%
+  }
+
+}
+
+@keyframes transfer{
+  0%{
+    opacity: 0%
+  }
+  50%{
+    opacity: 100%
+  }
+  100%{
+    opacity: 0%
+  }
+}
+.none{
+  display: none;
 }

@@ -21,3 +21,35 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+if(this.state.rate<this.props.Money){
+			buybutton=	<div className='ui button buy' style={{backgroundColor:'#248f24',color:'white'}} onClick={
+						()=>{
+							this.setState({value:this.state.value+this.state.items})
+							let rate = this.state.rate * this.state.items
+							let items = this.state.items
+							if(rate>this.props.Money){
+								rate = this.props.Money
+								items = rate / this.state.rate
+								this.setState({value:items})
+							}
+							this.setState({
+								trate:this.state.trate+rate
+							})
+							const trate = this.state.trate + rate
+							const name = 'Audi'
+							this.Audibuy(rate,items,name,trate)
+							this.setState({items:1})
+							
+						}
+						
+					} >Buy</div>
+		} else {
+		
+				buybutton=	<div className='ui disabled button buy' style={{backgroundColor:'#248f24',color:'white'}} onClick={
+						()=>{
+							this.setState({value:this.state.value+this.state.items})
+							
+						}
+
+			
