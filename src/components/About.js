@@ -19,7 +19,7 @@ const About = ()=>{
 		backgroundColor:'#000000',
 		padding:'10px'
 	}
-
+	let url = 'https://www.instagram.com/invites/contact/?i=1g3qt7q0waw08&utm_content=o8uqri7'
 	return(
 		<div>
 			<div className="ui riased very padded text container segment"  style={{padding:'17px', borderRadius:'20px' , marginTop:'20px' ,backgroundColor:'gray' ,border:'5px solid red' }} >
@@ -29,7 +29,9 @@ const About = ()=>{
                <center> <div className="ui small image" style={imgstyle} >
                 	<a href={Tns}><img src={Tns} alt="not found"/></a>
                 </div></center>
-                <p style={stylexs}><b>Developed By Thejas , A Small Try To Web Game That's All Thank You!</b></p>
+                <p style={stylexs}><b>Developed By Thejas , A Small Try To Web Game That's All Thank You!
+					Follow us In <a href={url}>Insta</a>
+					</b></p>
 			</div>
 
 		</div>
