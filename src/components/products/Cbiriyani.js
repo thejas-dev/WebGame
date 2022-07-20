@@ -70,7 +70,7 @@ class Cbiriyani extends React.Component{
 
 						}}   >Sell</div>
 		}
-		if(this.state.rate<this.props.Money){
+		if(this.state.rate<=this.props.Money){
 			buybutton=	<div className='ui button buy' style={{backgroundColor:'#248f24',color:'white'}} onClick={
 						()=>{
 							const rate = this.state.rate * this.state.items

@@ -32,7 +32,7 @@ const About = ()=>{
                 	<a href={Tns}><img src={Tns} style={imgstyle} alt="not found"/></a>
                 </div></center>
                 <p style={stylexs}><b>
-                 	The Game Is About Spending All The Money Of Elon Musk By Purchasing The Given Products Within 1 Minute.
+                 	The Game Is About Spending All The Money Of Elon Musk By Purchasing The Given Products Within 2 Minutes.
                  	<br/>
                  	<br/>
                  	You Can Buy The Products Using The Buy Button Given Below The Products or Sell it.

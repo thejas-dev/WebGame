@@ -151,7 +151,7 @@ class Appy extends React.Component{
 				<div className='ui small image'>
 					<img src={Elon} style={{borderRadius:'20px',filter:'drop-shadow(2px 3px 5px white)'}} alt='not found'/>
 				</div>
-				<p className='elonmuskwords' >Hey Boy Im Elon Musk ,The Rule of this Game is to Spend All of my Money In the given Products Within 1 minute, Timer Will Be Running On Background While You Are Playing.
+				<p className='elonmuskwords' >Hey Boy Im Elon Musk ,The Rule of this Game is to Spend All of my Money In the given Products Within 2 minutes, Timer Will Be Running On Background While You Are Playing.
 				<br/>
 				Please Enter Your Name So I Can Transfer All Of My Money To You</p> 
 				<div className='field'>
